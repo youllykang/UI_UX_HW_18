@@ -1,0 +1,197 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5%;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    text-align: center;
+  }
+
+  #navigationLeft {
+    display: flex;
+    width: 24%;
+    align-content: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+  }
+
+ #navigationRight {
+    display: flex;
+    width: 15%;
+    align-content: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+  }
+
+
+  .logo {
+      width: 50%;
+      justify-items: center;
+      align-items:center;
+      cursor: pointer;
+  }
+
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .icons {
+    display: flex;
+    width: 9%;
+    align-self:flex-start;
+  }
+
+  .icons img {
+    margin: 15px;
+    cursor: pointer;
+    
+  }
+  .highlight {
+    color: #A4905C;
+    font-weight: 800;
+  }
+  
+
+#hi {
+    padding-top: 30px;
+    padding-bottom: -10px;
+}
+
+h1 {   
+    font-family: filosofia-all-small-caps, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 22px;
+    color: #282828;
+    padding-top: -10px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: 'Crimson Text', serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color:#282828;
+    padding-bottom: 30px;
+}
+
+
+#heroImg {
+    background-image: url("../images/dearyouilyetsy.JPG");
+    padding: 25px;
+    justify-content: right;
+    background-repeat:  no-repeat;
+    background-position: bottom;
+}
+
+
+.content {
+    padding-top: 350px;
+    padding-left:230px;
+    padding-right: 725px;
+    padding-bottom: 50px;
+}
+
+#bio {
+    background-color: #DBD0B2;
+    position: absolute;
+    right: -30px;
+    top: 500px;
+    max-width: 600px;
+    z-index: 100;
+    padding: 80px;
+    justify-items: center;
+    min-width: 320px;
+    min-height: 300px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.aboutMeGridArea {
+    min-width: 320px;
+    min-height: 500px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+button {
+    font-family: 'Crimson Text', serif;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: #F7f7f7;
+    background-color:#5D583D;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#aboutMePic {
+    background-color: #F7f7f7;
+    padding-bottom: 100px;
+}
+
+
+#work {
+    background-color: #F7f7f7;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "calligraphy illustrations uiUX"
+    "calligraphy illustrations uiUX";
+}
+
+#calligraphy {
+    grid-area: calligraphy;
+    background-image: url("../images/calligraphy.JPG");
+}
+
+#illustrations {
+    grid-area: illustrations;
+    background-image: url("../images/illustration.GIF");
+}
+
+#uiUX {
+    grid-area: uiUX;
+    background-image: url("../images/Uniqgift\ Case\ Study.png");
+}
+
+.workGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: flex-start;
+  }
+
+
+h2 {   
+    background-color: #DBD0B2;
+    font-family: filosofia-all-small-caps, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 22px;
+    color: #282828;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align:center;
+}
+
+.heading {
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    height: 25px;
+    color: #F7f7f7;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border-bottom: 5px solid #F7f7f7;
+  }
+  
