@@ -23,9 +23,9 @@
     cursor: pointer;
   }
 
-
+  
   .logo {
-      width: 50%;
+      width: 45%;
       justify-items: center;
       align-items:center;
       cursor: pointer;
@@ -40,6 +40,7 @@
     display: flex;
     width: 9%;
     align-self:flex-start;
+    justify-items: right;
   }
 
   .icons img {
@@ -52,11 +53,13 @@
     font-weight: 800;
   }
   
-
-#hi {
-    padding-top: 30px;
-    padding-bottom: -10px;
-}
+  .menu {
+    display: flex;
+    width: 5%;
+    max-height: 35px;
+    align-self: flex-start;
+    justify-items: right;
+  }
 
 h1 {   
     font-family: filosofia-all-small-caps, serif;
@@ -66,13 +69,13 @@ h1 {
     letter-spacing: 3px;
     font-size: 22px;
     color: #282828;
-    padding-top: -10px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
 p {
     font-family: 'Crimson Text', serif;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1px;
     color:#282828;
     padding-bottom: 30px;
@@ -81,6 +84,7 @@ p {
 
 #heroImg {
     background-image: url("../images/dearyouilyetsy.JPG");
+    width: 100%;
     padding: 25px;
     justify-content: right;
     background-repeat:  no-repeat;
@@ -89,26 +93,28 @@ p {
 
 
 .content {
-    padding-top: 350px;
-    padding-left:230px;
-    padding-right: 725px;
+    padding-top: 375px;
+    padding-left:300px;
+    padding-right: 815px;
     padding-bottom: 50px;
 }
 
 #bio {
-    background-color: #DBD0B2;
+    background-color: #E8DFD7;
     position: absolute;
-    right: -30px;
-    top: 500px;
+    right: -43px;
+    top: 550px;
     max-width: 600px;
-    z-index: 100;
     padding: 80px;
-    justify-items: center;
+    padding-right: 120px;
+    justify-content: center;
     min-width: 320px;
     min-height: 300px;
     overflow-x: hidden;
     overflow-y: hidden;
+    justify-items: left;   
 }
+
 
 .aboutMeGridArea {
     min-width: 320px;
@@ -119,13 +125,15 @@ p {
 
 button {
     font-family: 'Crimson Text', serif;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
     letter-spacing: 2px;
     color: #F7f7f7;
     background-color:#5D583D;
-    padding: 8px;
+    padding: 10px;
     cursor: pointer;
+    justify-items: center;
+    margin-left: 50px;
 }
 
 #aboutMePic {
@@ -133,15 +141,33 @@ button {
     padding-bottom: 100px;
 }
 
+#projects {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding-bottom: 250px;
+}
 
 #work {
-    background-color: #F7f7f7;
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: space-evenly;
     display: grid;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 290px 290px;
+    grid-template-columns: 400px 400px 400px;
     grid-template-areas:
     "calligraphy illustrations uiUX"
     "calligraphy illustrations uiUX";
+}
+
+.projectDescription {
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-areas:
+    "cal ill ui";
+
 }
 
 #calligraphy {
@@ -157,6 +183,7 @@ button {
 #uiUX {
     grid-area: uiUX;
     background-image: url("../images/Uniqgift\ Case\ Study.png");
+    background-position: center;
 }
 
 .workGridArea {
@@ -171,7 +198,7 @@ button {
 
 
 h2 {   
-    background-color: #DBD0B2;
+    background-color: #D0BDAD;
     font-family: filosofia-all-small-caps, serif;
     font-weight: 400;
     font-style: normal;
@@ -185,13 +212,219 @@ h2 {
 }
 
 .heading {
-    background-color: rgba(0,0,0,0.7);
     padding: 15px;
     height: 25px;
-    color: #F7f7f7;
-    font-family: 'Crimson Text', serif;
-    letter-spacing: 1px;
-    font-size: 15px;
-    border-bottom: 5px solid #F7f7f7;
+    color:black;
+    font-family: filosofia-all-small-caps, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 22px;
+    text-align: center;
   }
   
+  .description {
+    font-family: 'Crimson Text', serif;
+    text-transform: none;
+    font-size: 14px;
+    letter-spacing: none;
+    color:#282828;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+#contact {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 528px;
+    grid-template-columns: 55% 45%;
+    grid-template-areas:
+    "wantToTalk contactPicture";
+}
+
+.contactGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: grid;
+    align-content: flex-start;
+}
+
+#wantToTalk {
+    grid-area: wantToTalk;
+    background-color: #D0BDAD;
+    justify-content: center;
+    padding: 50px;
+}
+
+#contactPicture {
+    grid-area: contactPicture; 
+    background-image: url("../images/Contact.JPG");
+    top:0px;
+    left:0px;
+    z-index: 99%
+}
+
+.textBox {
+    left: 200px;
+    top: 3000px;
+    max-width: 600px;
+    padding: 80px;
+    justify-items: center;
+    min-width: 320px;
+    min-height: 300px;
+    z-index: 100;
+}
+
+#letsConnect p {
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+h3 {
+    margin-left: 50px;
+    font-family: filosofia-all-small-caps, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: #282828;
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+
+
+    .content {
+        padding-top: 400px;
+        padding-left: 100px;
+        padding-right: 700px;
+        padding-bottom: 50px;
+    }
+
+    #hello {
+        height: 60px;
+    }
+
+    #bio {
+        right: -43px;
+        top: 550px;
+        max-width: 400px;
+        padding: 60px;
+        padding-right: 120px;
+        justify-content: center;
+        min-width: 320px;
+        min-height: 300px; 
+    }
+    
+    .menu {
+        display: none;
+    }
+ 
+
+@media only screen and (max-width: 1000px) {
+    .navBar {
+        display: block;
+        text-align: justify;
+        padding-bottom: 100px;
+    }
+
+    .logo {
+        float: left;
+        margin: 0px;
+        padding-left: 30px;
+    }
+
+    .menu {
+        float: right;
+        padding-right: 30px;
+        width: 50px;
+    }
+
+    #bio {
+        position: absolute;
+        right: -43px;
+        top: 550px;
+        max-width: 400px;
+        padding: 40px;
+        justify-content: center;
+        min-width: 320px;
+        min-height: 300px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        justify-items: center;    
+    }
+
+    #bio p {    
+        padding-right: none;
+        padding-bottom: none;
+    }
+
+    #bio h1 {
+        padding-left: none;
+        padding-right: none;
+    }
+
+    #navigationLeft, #navigationRight {
+      display: none;
+    } 
+    .icons {
+        display: none;
+    }
+
+    h1 {   
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    
+    #heroImg {
+    background-size: cover;
+    }
+
+    #hello, .content h1, .content p {
+    display: none;
+    }
+    
+    #bio {
+    width: 100%;
+    }
+    
+    #bio p, #bio h1 {    
+    padding-left: 50px;
+    padding-right: 150px;
+    }
+
+    #bio img {
+    display: block;
+    padding: 10px;
+    }
+}
+
+  @media only screen and (min-width: 1000px) {
+    #menu {
+        display: none;
+    }
+
+    #bio img {
+        display: none;
+    }
+
+    #bio h1 {
+        display: none;
+    }
+}
+
+  
+@media only screen and (min-width: 600px) {
+    #bio {
+        width: 100%;
+    }
+}
