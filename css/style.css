@@ -39,7 +39,7 @@
   .icons {
     display: flex;
     width: 9%;
-    align-self:flex-start;
+    align-self: flex-start;
     justify-items: right;
   }
 
@@ -167,7 +167,6 @@ button {
     grid-template-columns: 400px 400px 400px;
     grid-template-areas:
     "cal ill ui";
-
 }
 
 #calligraphy {
@@ -324,7 +323,7 @@ h3 {
     .menu {
         display: none;
     }
- 
+}
 
 @media only screen and (max-width: 1000px) {
     .navBar {
@@ -426,5 +425,25 @@ h3 {
 @media only screen and (min-width: 600px) {
     #bio {
         width: 100%;
+        margin: 0px;
+        position:relative;
+        max-width: 600px;
+        padding: 80px;
+        padding-right: 120px;
+        justify-content: center;
+        min-width: 600px;
+        min-height: 300px;
+        justify-items: left;   
+    }
+
+#contact {
+    width: 100%;
+    display: block;
+    grid-template-rows: 528px 528px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "wantToTalk"
+    "contactPicture";
+
     }
 }
