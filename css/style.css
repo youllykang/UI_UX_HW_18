@@ -344,20 +344,6 @@ h3 {
         width: 50px;
     }
 
-    #bio {
-        position: absolute;
-        right: -43px;
-        top: 550px;
-        max-width: 400px;
-        padding: 40px;
-        justify-content: center;
-        min-width: 320px;
-        min-height: 300px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        justify-items: center;    
-    }
-
     #bio p {    
         padding-right: none;
         padding-bottom: none;
@@ -397,6 +383,10 @@ h3 {
     display: block;
     padding: 10px;
     }
+
+    #aboutMePic {
+        display:none;
+    }
 }
 
   @media only screen and (min-width: 1000px) {
@@ -411,25 +401,44 @@ h3 {
     #bio h1 {
         display: none;
     }
+
+    #aboutMePic {
+        display:none;
 }
 
   
-@media only screen and (min-width: 600px) {
-    #bio {
-        width: 100%;
-        margin: 0px;
-        position:relative;
-        max-width: 600px;
-        padding: 80px;
-        padding-right: 120px;
-        justify-content: center;
-        min-width: 600px;
-        min-height: 300px;
-        justify-items: left;   
-    }
+@media only screen and (max-width: 600px) {
+  
+#bio {
+    width: 100%;
+    margin: 0px;
+    padding: none;
+    padding-right: none;
+}
+
+#bio p {
+    display: none;
+}
 
 #contact {
     width: 100%;
     display: block;
     }
+
+#work {
+      margin: none; 
+        justify-content: space-evenly;
+        display: grid;
+        grid-template-rows: 600px 600px 600px;
+        grid-template-columns: 400px;
+        grid-template-areas:
+    "calligraphy"
+    "illustrations"
+    "uiUX";
+    }
+    
+ #aboutMePic {
+        display:none;
+    }
+
 }
