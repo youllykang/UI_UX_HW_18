@@ -23,7 +23,7 @@
     cursor: pointer;
   }
 
-  
+
   .logo {
       width: 45%;
       justify-items: center;
@@ -363,11 +363,6 @@ h3 {
         padding-bottom: none;
     }
 
-    #bio h1 {
-        padding-left: none;
-        padding-right: none;
-    }
-
     #navigationLeft, #navigationRight {
       display: none;
     } 
@@ -392,9 +387,6 @@ h3 {
     display: none;
     }
     
-    #bio {
-    width: 100%;
-    }
     
     #bio p, #bio h1 {    
     padding-left: 50px;
@@ -439,11 +431,5 @@ h3 {
 #contact {
     width: 100%;
     display: block;
-    grid-template-rows: 528px 528px;
-    grid-template-columns: 100%;
-    grid-template-areas:
-    "wantToTalk"
-    "contactPicture";
-
     }
 }
